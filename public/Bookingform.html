@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacation Outing- Booking</title>
+
+  <link rel="shortcut icon" href="/favicon.png" type="image/svg+xml" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: linear-gradient(to bottom, #0f1a2c, #f6ac0f);
+        color: #fff;
+        background-image: url("/assets/images/bookingbg.jpg");
+        /* Replace with your image path */
+        background-size: cover;
+        background-blend-mode: multiply;
+      }
+
+      header {
+        background-color: rgba(51, 51, 51, 0.8);
+        /* Semi-transparent background for better readability */
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+      }
+
+      .booking-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        /* Semi-transparent background for better readability */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      select {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      button {
+        background-color: #007a51;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #f6ac0f;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Trip Booking Form</h1>
+    </header>
+
+    <div class="booking-container">
+      <form action="#" method="post" onsubmit="return bookNow()">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter Your Name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter Email ID" required />
+        </div>
+
+        <div class="form-group">
+          <label for="contact">Contact No:</label>
+          <input type="contact" id="contact" name="contact" placeholder="Enter 10 Digit Number" required />
+        </div>
+
+        <div class="form-group">
+        <label for="package">Destination or Packages:</label>
+          <select id ="package" id="package" name="package" required>
+            <option value="option1">Choose Destination or Package</option>
+            <option value="option2">Goa</option>
+            <option value="option2">Tajmahal</option>
+            <option value="option2">Maldives</option>
+            <option value="option2">Pondichery</option>
+            <option value="option2">Narmadha River</option>
+            <option value="option2">Manaali</option>
+            <option value="option2">Shimla</option>
+            <option value="option2">Ooty</option>
+            <option value="option2">Munar</option>
+            <option value="option2">Bangalore</option>
+        </select>
+      </div>
+
+
+        <div class="form-group">
+          <label for="check-in">In Date:</label>
+          <input type="date" id="check-in" name="check-in" required />
+        </div>
+
+        <div class="form-group">
+          <label for="check-out">Out Date:</label>
+          <input type="date" id="check-out" name="check-out" required />
+        </div>
+
+        <div class="form-group">
+        <label for="no.of.person">No Of Persons:</label>
+            <input type="number" id="passengerCount" value="1">
+          </div>
+
+          <div class="form-group">
+          <label for="Payment">Payment Option:</label>
+            <select id ="options" id="Payment" name="Payment" required>
+      
+              <option value="option1">Choose Payment Option</option>
+              <option value="option2">Direct Payment (Hand to Hand)</option>
+      
+          </select>
+        </div>
+<center>
+        <div class="form-group">
+          <button type="submit">Book Now</button>
+        </div>
+        </center>
+      </form>
+
+    <script>
+      function bookNow() {
+        // You can add additional logic here for form validation or data submission
+        alert("Booked Successfully!");
+        return false; // Prevents the form from submitting
+      }
+    </script>
+  </body>
+</html>
